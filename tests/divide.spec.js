@@ -25,13 +25,13 @@ describe("Iteration 2", () => {
         });
 
         it("should return undefined if any of the two arguments is not a number", () => {
-            expect(add('1', 1)).toEqual(undefined);
-            expect(add(1, '1')).toEqual(undefined);
-            expect(add('1', '1')).toEqual(undefined);
+            expect(divide('1', 1)).toEqual(undefined);
+            expect(divide(1, '1')).toEqual(undefined);
+            expect(divide('1', '1')).toEqual(undefined);
         });
 
-        // it("should return Infinity if the second argument is 0", () => {
-        //     expect(add(1, 0)).toEqual(Infinity);
-        // });
+        it("should return Infinity if the second argument is 0", () => {
+            expect(divide(1, 0)).toEqual(Infinity);
+        });
     })    
 })
